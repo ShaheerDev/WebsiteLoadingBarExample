@@ -1,6 +1,6 @@
 
 setTimeout(function(){ 
-    if(document.readyState){ //If it is loaded
+    if(document.readyState == "complete"){ //If it is loaded
         document.getElementById("container").style.visibility = "visible";
         document.getElementById("loadingdiv").style.display = "none";
     }else{ //If it isn't loaded
